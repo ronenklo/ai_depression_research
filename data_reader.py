@@ -1,6 +1,7 @@
 import pandas as pd
 import os
-
+import numpy as np
+from subject_info import SubjectInfo
 
 SUM_FIELDS = ["Q1_1", "Q1_2", "Q1_3", "Q1_4", "Q1_5","Q1_6", "Q1_7", "Q1_8", "Q2"]
 PROLIFIC_ID_CODE = "PROLIFIC_PID"
@@ -31,27 +32,61 @@ def load_phq(phq_dir_path):
 def load_second_study(second_study_results):
     df = pd.read_csv(second_study_results)
     df.set_index("Prolific ID", inplace=True)
-    df.drop(labels='StartDate', inplace=True, axis=1)
-    df.drop(labels='EndDate', inplace=True, axis=1)
-    df.drop(labels='Status', inplace=True, axis=1)
-    df.drop(labels='IPAddress', inplace=True, axis=1)
-    df.drop(labels='Progress', inplace=True, axis=1)
-    df.drop(labels='Duration (in seconds)', inplace=True, axis=1)
-    df.drop(labels='Finished', inplace=True, axis=1)
-    df.drop(labels='RecordedDate', inplace=True, axis=1)
-    df.drop(labels='ResponseId', inplace=True, axis=1)
-    df.drop(labels='RecipientLastName', inplace=True, axis=1)
-    df.drop(labels='RecipientFirstName', inplace=True, axis=1)
-    df.drop(labels='PROLIFIC_PID', inplace=True, axis=1)
-    df.drop(labels='RecipientEmail', inplace=True, axis=1)
-    df.drop(labels='ExternalReference', inplace=True, axis=1)
-    df.drop(labels='LocationLatitude', inplace=True, axis=1)
-    df.drop(labels='LocationLongitude', inplace=True, axis=1)
-    df.drop(labels='DistributionChannel', inplace=True, axis=1)
-    df.drop(labels='UserLanguage', inplace=True, axis=1)
-    df.drop(labels='Q15', inplace=True, axis=1)
-    print(df)
+    # df.drop(labels='StartDate', inplace=True, axis=1)
+    # df.drop(labels='EndDate', inplace=True, axis=1)
+    # df.drop(labels='Status', inplace=True, axis=1)
+    # df.drop(labels='IPAddress', inplace=True, axis=1)
+    # df.drop(labels='Progress', inplace=True, axis=1)
+    # df.drop(labels='Duration (in seconds)', inplace=True, axis=1)
+    # df.drop(labels='Finished', inplace=True, axis=1)
+    # df.drop(labels='RecordedDate', inplace=True, axis=1)
+    # df.drop(labels='ResponseId', inplace=True, axis=1)
+    # df.drop(labels='RecipientLastName', inplace=True, axis=1)
+    # df.drop(labels='RecipientFirstName', inplace=True, axis=1)
+    # df.drop(labels='PROLIFIC_PID', inplace=True, axis=1)
+    # df.drop(labels='RecipientEmail', inplace=True, axis=1)
+    # df.drop(labels='ExternalReference', inplace=True, axis=1)
+    # df.drop(labels='LocationLatitude', inplace=True, axis=1)
+    # df.drop(labels='LocationLongitude', inplace=True, axis=1)
+    # df.drop(labels='DistributionChannel', inplace=True, axis=1)
+    # df.drop(labels='UserLanguage', inplace=True, axis=1)
+    # df.drop(labels='Q15', inplace=True, axis=1)
+    return df
+
+
+
+def create_subject_list(first_study_df: pd.DataFrame, second_study_df: pd.DataFrame):
+    lst = []
+    for index, row in second_study_df.iterrows():
+        if 'Prolific ID' in index or "ImportId" in index:
+            continue
+        prolificID = index
+        first_mood_columns = ['Q48_1', 'Q49_1', 'Q50_1', 'Q51_1', 'Q52_1', 'Q53_1']
+        first_mood_questions = np.array([row[cur_col] for cur_col in first_mood_columns])
+        event_description_txt = row['Q16']
+        first_cause_txt = row['Q17']
+        first_cause_questions_columns = ['Q22_1', 'Q23_1', 'Q24_1', 'Q25_1','Q26_1', 'Q27_1', 'Q28_1', 'Q29_1']
+        first_casue_questions_result = np.array([row[cur_col] for cur_col in first_cause_questions_columns])
+        second_mood_columns = ['Q56_1', 'Q57_1', 'Q58_1', 'Q59_1', 'Q60_1', 'Q61_1']
+        second_mood_questions = np.array([row[cur_col] for cur_col in second_mood_columns])
+        second_cause_txt = row['Q11']
+        second_case_questions_columns = ['Q30_1', 'Q31_1', 'Q32_1', 'Q33_1', 'Q34_1', 'Q35_1', 'Q36_1', 'Q37_1']
+        second_cause_questions_result = np.array([row[cur_col] for cur_col in second_case_questions_columns])
+        third_mode_columns = ['Q63_1', 'Q64_1', 'Q65_1', 'Q66_1', 'Q67_1', 'Q68_1']
+        third_mood_questions = np.array([row[cur_col] for cur_col in third_mode_columns])
+        rumination_columns = ['Q70_1', 'Q70_2', 'Q70_3', 'Q70_4', 'Q70_5', 'Q70_6','Q70_7', 'Q70_8', 'Q70_9', 'Q70_10',
+                                'Q69_1', 'Q69_2', 'Q69_3', 'Q69_4', 'Q69_5', 'Q69_6', 'Q69_7', 'Q69_8', 'Q69_9', 'Q69_10'
+                                , 'Q69_11', 'Q69_12']
+        rumination_questions = np.array([row[cur_col] for cur_col in rumination_columns])
+        phq_score = first_study_df['phq_score'][prolificID]
+        lst.append(SubjectInfo(prolificID=prolificID, first_mood_questions=first_mood_questions, event_description_txt=event_description_txt,
+                               first_cause_txt=first_cause_txt, first_casue_questions_result=first_casue_questions_result, second_mood_questions=second_mood_questions,
+                               second_cause_txt=second_cause_txt, second_cause_questions_result=second_cause_questions_result,
+                               third_mood_questions=third_mood_questions, rumination_questions=rumination_questions, phq_score=phq_score))
+    return lst
+
 if __name__ == '__main__':
-    # df = load_phq("PHQ_data")
-    # print(df)
-    load_second_study('first_results.csv')
+    first_study = load_phq("PHQ_data")
+    second_study = load_second_study('first_results.csv')
+    x = create_subject_list(first_study, second_study)
+    print(x[0].first_cause_txt)
