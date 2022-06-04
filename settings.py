@@ -1,0 +1,3 @@
+API = {
+ "KEY":"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"
+}

@@ -1,0 +1,58 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,Q1,Q1_1,Q1_2,Q1_3,Q1_4,Q1_5,Q1_6,Q1_7,Q1_8,Q2,PROLIFIC_PID
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,"Dear participant,
+
+			Thank you for taking part in this study, conducted by the Cognition and Emotion Lab, under the direction of Prof. Nilly Mor, at the Hebrew University of Jerusalem.  In this study, you will be asked to complete a brief questionnaire about your feelings (2 min). Based on the responses to this questionnaire some participants will be invited to take part in follow-up studies conducted in the lab via your prolific ID number only.    
+
+			Voluntary Participation: 
+
+			Your participation in this study is voluntary. You will earn 0.27£ in prolific credit for your participation in this study. If you are eligible to participate in additional studies you will then receive between 2.67 £ and  4.5 £ (depending on the studies for which you will be eligible), for your participation in the following studies. These studies are between 20-35 minutes long. 
+
+			You are free to withdraw from participation at any time without penalty, simply by exiting your browser. Note that exiting the survey and ending your participation entirely will forfeit your compensation.
+
+			Confidentiality:
+
+			The study team will take the following precautions to protect the confidentiality of your information. The information obtained from this study will be used for research purposes only, with your right to privacy retained. No identifying personal information will be collected. A file linking your Prolific id number, but no other identifying information, with study data will be kept on a password-protected computer. Data access will be limited to study staff. Only the investigators authorized to do so will have access to the research records. Please note, however, that while in transmission on the internet, your responses may not be entirely secure.
+
+			Inquiries/Questions:
+
+			You may contact us by email with any question that may come up, through the following email: nilly-mor.lab@mail.huji.ac.il.
+
+			Freedom of Consent:
+
+			I understand that participation is voluntary and that I am free to deny consent if I so desire, both now and at any time during the study. The only risk in the experiment is a slight feeling of depression due to the questionnaires and this feeling is expected to pass in a short time.
+
+			 
+
+			Selecting ""I consent"" below indicates that I am at least 18 years or older, I have read this document in its entirety, and I am willing to participate in this research project.","Over the last two weeks, how often have you been bothered by any of the following problems? - Little interest or pleasure in doing things","Over the last two weeks, how often have you been bothered by any of the following problems? - Feeling down, depressed, or hopeless","Over the last two weeks, how often have you been bothered by any of the following problems? - Trouble falling or staying asleep, or sleeping too much","Over the last two weeks, how often have you been bothered by any of the following problems? - Feeling tired or having little energy","Over the last two weeks, how often have you been bothered by any of the following problems? - Poor appetite or overeating","Over the last two weeks, how often have you been bothered by any of the following problems? - Feeling bad about yourself — or that you are a failure or have let yourself or your family down","Over the last two weeks, how often have you been bothered by any of the following problems? - Trouble concentrating on things, such as reading the newspaper or watching television","Over the last two weeks, how often have you been bothered by any of the following problems? - Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual","How difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",PROLIFIC_PID
+"{""ImportId"":""startDate"",""timeZone"":""Europe/Athens""}","{""ImportId"":""endDate"",""timeZone"":""Europe/Athens""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""Europe/Athens""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID10""}","{""ImportId"":""QID2_1""}","{""ImportId"":""QID2_2""}","{""ImportId"":""QID2_3""}","{""ImportId"":""QID2_4""}","{""ImportId"":""QID2_5""}","{""ImportId"":""QID2_6""}","{""ImportId"":""QID2_7""}","{""ImportId"":""QID2_8""}","{""ImportId"":""QID3""}","{""ImportId"":""PROLIFIC_PID""}"
+2022-05-25 19:05:38,2022-05-25 19:06:11,0,128.139.225.245,100,32,1,2022-05-25 19:06:12,R_33lqFGHScOEH0GU,,,,,31.7808,35.2287,anonymous,EN,7,0,1,2,2,2,2,2,2,1,5ea7e56229dc521d74f6b308
+2022-05-25 19:11:47,2022-05-25 19:13:01,0,81.111.21.140,100,74,1,2022-05-25 19:13:01,R_24159gKuvI79WHm,,,,,51.4176,0.0692,anonymous,EN,7,1,1,0,0,0,0,0,0,1,5eb689102f6b360162363e02
+2022-05-25 19:18:10,2022-05-25 19:20:24,0,62.255.99.100,100,134,1,2022-05-25 19:20:24,R_0GqXyZvCQKefoD7,,,,,53.0806,-2.1331,anonymous,EN,7,2,3,1,1,1,2,2,0,3,5bf62ef77ea49f0001baaa88
+2022-05-25 19:20:19,2022-05-25 19:21:26,0,85.255.236.200,100,67,1,2022-05-25 19:21:28,R_9pgVrPnBSmtJKBH,,,,,51.4964,-0.1224,anonymous,EN,7,0,0,2,2,0,3,0,0,1,5c011d7587f5d60001defd82
+2022-05-25 19:22:06,2022-05-25 19:23:33,0,88.144.48.21,100,86,1,2022-05-25 19:23:33,R_z85c2w2AMqmZ9FT,,,,,52.5678,1.662,anonymous,EN,7,0,0,0,1,0,0,0,0,2,59d4b084115096000190dbce
+2022-05-25 19:24:08,2022-05-25 19:25:29,0,147.147.83.228,100,80,1,2022-05-25 19:25:29,R_0AMLRxqs9O85sbf,,,,,55.8522,-2.3837,anonymous,EN,7,0,0,1,1,1,0,1,0,1,547272b4fdf99b44c5647418
+2022-05-26 12:55:16,2022-05-26 12:56:20,0,82.20.118.232,100,64,1,2022-05-26 12:56:21,R_2w6JRu8hAgqIMAJ,,,,,53.4236,-2.3113,anonymous,EN,7,0,1,0,1,0,1,0,0,1,5e3b082738da7b317bdcceed
+2022-05-26 12:54:54,2022-05-26 12:56:23,0,213.48.15.246,100,89,1,2022-05-26 12:56:23,R_3sct5nRiWzPhV17,,,,,51.7626,0.471,anonymous,EN,7,1,0,2,1,2,1,0,0,2,5fb23b436684337b2ede25bc
+2022-05-26 12:56:41,2022-05-26 12:58:12,0,82.203.72.3,100,90,1,2022-05-26 12:58:12,R_1goQBemcQt7xYD9,,,,,52.7839,-1.6676,anonymous,EN,7,1,1,0,1,0,0,0,0,2,62853f0fcc7f1334c7f965f0
+2022-05-26 12:57:51,2022-05-26 12:59:09,0,192.173.4.183,100,77,1,2022-05-26 12:59:09,R_3ijXAvWY9TCO77Z,,,,,54.9836,-1.5895,anonymous,EN,7,0,0,1,1,1,1,1,0,1,5f8ee107ad172f0956700793
+2022-05-26 13:00:36,2022-05-26 13:01:10,0,92.22.87.76,100,33,1,2022-05-26 13:01:10,R_1IXy7MnA7L36MYI,,,,,50.8345,-0.186,anonymous,EN,7,0,1,1,0,0,1,0,0,1,60f87b1eeff5cfe7545c60bc
+2022-05-27 15:14:34,2022-05-27 15:15:10,0,109.249.184.173,100,35,1,2022-05-27 15:15:10,R_2A0a0fH8oIamTmY,,,,,51.4964,-0.1224,anonymous,EN,7,1,1,0,1,0,0,0,0,1,5c1041a209e7c20001f1f128
+2022-05-27 15:14:40,2022-05-27 15:15:52,0,85.255.234.149,100,71,1,2022-05-27 15:15:52,R_3lsh8maaUhcc2QC,,,,,51.4964,-0.1224,anonymous,EN,7,1,1,1,1,1,1,1,1,2,5bded11773c8380001586c81
+2022-05-27 15:16:45,2022-05-27 15:18:59,0,2.127.15.15,100,133,1,2022-05-27 15:18:59,R_3puvkzsYI1GAvlI,,,,,55.9552,-3.2,anonymous,EN,7,1,0,3,0,0,0,0,0,1,58d8e8ac58d78900016eada5
+2022-05-27 15:18:29,2022-05-27 15:19:28,0,86.182.37.110,100,58,1,2022-05-27 15:19:28,R_3JLT7rl63g7PNcZ,,,,,51.4425,-0.9267,anonymous,EN,7,0,0,1,1,0,0,0,0,1,5a2039a57b108200011e0341
+2022-05-27 15:19:09,2022-05-27 15:20:18,0,90.241.49.205,100,68,1,2022-05-27 15:20:18,R_2e3cvVgLayTZs7o,,,,,52.4666,-1.9205,anonymous,EN,7,2,2,1,2,3,2,1,1,2,5f213c7482794102f39debca
+2022-05-28 10:18:16,2022-05-28 10:19:38,0,85.255.237.89,100,81,1,2022-05-28 10:19:40,R_1inblFqdrX7nrI7,,,,,51.4964,-0.1224,anonymous,EN,7,1,2,0,3,3,2,0,0,1,5ec4f7c3fd704d416a5087d2
+2022-05-28 10:22:50,2022-05-28 10:24:37,0,146.199.86.140,100,107,1,2022-05-28 10:24:38,R_xzLUxvksbOpeB9v,,,,,51.4061,0.0152,anonymous,EN,7,1,1,0,2,0,0,0,0,1,608f27fad7aa0d739c14a740
+2022-05-28 10:26:49,2022-05-28 10:27:12,0,95.146.91.77,100,22,1,2022-05-28 10:27:12,R_279W1PnTW4LwDBB,,,,,52.0686,1.1443,anonymous,EN,7,1,1,2,1,2,1,1,1,2,5b1f717b88ee7400012b4fb1
+2022-05-28 10:29:57,2022-05-28 10:31:01,0,86.160.198.108,100,63,1,2022-05-28 10:31:01,R_33j0rh6ifWCFWnl,,,,,55.0962,-3.4197,anonymous,EN,7,0,0,0,0,0,0,0,0,,616ac79dcdd6ef423d2a761e
+2022-05-28 10:29:53,2022-05-28 10:31:11,0,2.31.166.186,100,78,1,2022-05-28 10:31:12,R_2dioo8zx6zc1cVY,,,,,51.4317,-0.4576,anonymous,EN,7,2,2,0,2,1,1,1,1,2,5af20d838838250001cb3477
+2022-05-28 10:31:04,2022-05-28 10:32:53,0,176.253.58.121,100,108,1,2022-05-28 10:32:53,R_2qE6yLGNH6caySU,,,,,52.4994,-2.0188,anonymous,EN,7,1,1,0,1,0,0,0,0,1,6053790f2babfba77b1cfebb
+2022-05-28 10:33:49,2022-05-28 10:34:44,0,92.239.36.242,100,55,1,2022-05-28 10:34:44,R_3D7NOsFkGn6ez6j,,,,,55.9335,-3.254,anonymous,EN,7,3,1,2,2,3,2,3,0,2,5c0189dc9d035a00017e7eaa
+2022-05-28 10:41:50,2022-05-28 10:42:56,0,80.41.176.51,100,66,1,2022-05-28 10:42:58,R_1IFBMjMMXInLHyn,,,,,50.8345,-0.186,anonymous,EN,7,3,3,3,3,1,3,3,2,3,5e999e7c295393016b7c2577
+2022-05-28 10:41:34,2022-05-28 10:43:09,0,87.115.103.162,100,95,1,2022-05-28 10:43:11,R_2D5eoXSUrKP3bgQ,,,,,50.9973,-2.0886,anonymous,EN,7,0,0,0,0,0,0,0,0,,5ebebcf619a604258a233c4f
+2022-05-28 10:46:15,2022-05-28 10:46:55,0,90.216.252.73,100,39,1,2022-05-28 10:46:55,R_RXkDDj95uB8sM7f,,,,,51.4722,0.3226,anonymous,EN,7,1,1,2,3,2,2,3,1,2,5f9558cbb4a1a902fb6902e5
+2022-05-28 10:49:13,2022-05-28 10:49:59,0,31.124.192.72,100,45,1,2022-05-28 10:49:59,R_3mlZxD65OEW47ZE,,,,,52.7061,-2.0061,anonymous,EN,7,1,2,3,3,3,3,2,1,2,587372cbe16d530001b34ed8
+2022-05-28 10:48:52,2022-05-28 10:50:06,0,81.155.203.17,100,73,1,2022-05-28 10:50:07,R_2VaTE3oMRF9YYma,,,,,51.3735,-2.3594,anonymous,EN,7,2,1,2,2,1,0,2,1,2,60a9e6a82ed02743f75de3cf
+2022-05-28 10:49:48,2022-05-28 10:51:10,0,51.146.87.39,100,82,1,2022-05-28 10:51:11,R_22kLWUg6OT1EOwL,,,,,50.8544,-1.002,anonymous,EN,7,1,1,0,2,0,2,0,0,2,5eb3d22ffa15221c2e0117c5
+2022-05-28 10:50:16,2022-05-28 10:51:28,0,2.101.128.227,100,71,1,2022-05-28 10:51:29,R_2f72PUKxJztddcW,,,,,52.7066,-2.7326,anonymous,EN,7,0,0,0,1,0,0,0,0,1,568e997ce3ef9e000ca204d4
+2022-05-28 10:51:05,2022-05-28 10:51:52,0,2.97.251.212,100,47,1,2022-05-28 10:51:53,R_1f32t82LKNrA4sW,,,,,52.4666,-1.9205,anonymous,EN,7,1,0,1,1,2,0,1,0,1,571ba0766b0894001362d82f
