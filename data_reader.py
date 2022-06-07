@@ -32,25 +32,6 @@ def load_phq(phq_dir_path):
 def load_second_study(second_study_results):
     df = pd.read_csv(second_study_results)
     df.set_index("Prolific ID", inplace=True)
-    # df.drop(labels='StartDate', inplace=True, axis=1)
-    # df.drop(labels='EndDate', inplace=True, axis=1)
-    # df.drop(labels='Status', inplace=True, axis=1)
-    # df.drop(labels='IPAddress', inplace=True, axis=1)
-    # df.drop(labels='Progress', inplace=True, axis=1)
-    # df.drop(labels='Duration (in seconds)', inplace=True, axis=1)
-    # df.drop(labels='Finished', inplace=True, axis=1)
-    # df.drop(labels='RecordedDate', inplace=True, axis=1)
-    # df.drop(labels='ResponseId', inplace=True, axis=1)
-    # df.drop(labels='RecipientLastName', inplace=True, axis=1)
-    # df.drop(labels='RecipientFirstName', inplace=True, axis=1)
-    # df.drop(labels='PROLIFIC_PID', inplace=True, axis=1)
-    # df.drop(labels='RecipientEmail', inplace=True, axis=1)
-    # df.drop(labels='ExternalReference', inplace=True, axis=1)
-    # df.drop(labels='LocationLatitude', inplace=True, axis=1)
-    # df.drop(labels='LocationLongitude', inplace=True, axis=1)
-    # df.drop(labels='DistributionChannel', inplace=True, axis=1)
-    # df.drop(labels='UserLanguage', inplace=True, axis=1)
-    # df.drop(labels='Q15', inplace=True, axis=1)
     return df
 
 
@@ -79,14 +60,39 @@ def create_subject_list(first_study_df: pd.DataFrame, second_study_df: pd.DataFr
                                 , 'Q69_11', 'Q69_12']
         rumination_questions = np.array([row[cur_col] for cur_col in rumination_columns])
         phq_score = first_study_df['phq_score'][prolificID]
-        lst.append(SubjectInfo(prolificID=prolificID, first_mood_questions=first_mood_questions, event_description_txt=event_description_txt,
+        lst.append(SubjectInfo(prolificID=str(prolificID), first_mood_questions=first_mood_questions, event_description_txt=event_description_txt,
                                first_cause_txt=first_cause_txt, first_casue_questions_result=first_casue_questions_result, second_mood_questions=second_mood_questions,
                                second_cause_txt=second_cause_txt, second_cause_questions_result=second_cause_questions_result,
                                third_mood_questions=third_mood_questions, rumination_questions=rumination_questions, phq_score=phq_score))
     return lst
 
+def get_preprocess_data(first_study_path, second_study_path):
+    first_study = load_phq(first_study_path)
+    second_study = load_second_study(second_study_path)
+    return create_subject_list(first_study, second_study)
+
+
+def get_relevent_phq(phq_dir_path):
+    df = load_phq(phq_dir_path)
+    high_depression = []
+    low_depression = []
+    for index, row in df.iterrows():
+        try:
+            if df['phq_score'][index] >= 15:
+                high_depression.append(index)
+            elif df['phq_score'][index] <= 5:
+                low_depression.append(index)
+        except:
+            continue
+    print("high depression:")
+    for d in high_depression:
+        print(d)
+    print("\n low depression")
+    for l in low_depression:
+        print(l)
 if __name__ == '__main__':
-    first_study = load_phq("PHQ_data")
-    second_study = load_second_study('first_results.csv')
-    x = create_subject_list(first_study, second_study)
-    print(x[0].first_cause_txt)
+    get_relevent_phq('PHQ_data')
+    # first_study = load_phq("PHQ_data")
+    # second_study = load_second_study('first_results.csv')
+    # x = create_subject_list(first_study, second_study)
+    # print(x[0].prolificID)
